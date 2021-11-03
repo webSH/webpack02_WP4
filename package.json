@@ -4,7 +4,8 @@
   "description": "webpack 第二遍练习，本次使用 webpack4 版本",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "webpack src/main.js"
   },
   "keywords": [
     "二练"
