@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-e": "webpack ./src/main.js",
-	"build": "webpack --config build/webpack.config.js"
+    "build": "webpack --config build/webpack.config.js"
   },
   "keywords": [
     "二练"
@@ -14,6 +14,7 @@
   "author": "LL",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.9.1"
   }
