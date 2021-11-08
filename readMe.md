@@ -100,7 +100,7 @@ module.exports = {
 	mode: 'development', //开发模式
 	entry: {
 		main: path.resolve(__dirname, '../src/main.js'), // 入口命名，供 plugins 中使用
-		header: path.resolve(__dirname, '../src/header.js') // 入口命名，供 plugins 中使用
+		head: path.resolve(__dirname, '../src/head.js') // 入口命名，供 plugins 中使用
 	},
 	output: {
 		filename: '[name].[hash:8].js', //打包后的文件名称
@@ -113,9 +113,9 @@ module.exports = {
 			chunks: ['main'] // 与入口文件对应的模块名
 		}),
 		new HtmlpackPlugin({
-			template: path.resove(__dirname, '../public/header.html'),
-			filename: 'header.html',
-			chunks: ['header'] // 与入口文件对应的模块名
+			template: path.resove(__dirname, '../public/head.html'),
+			filename: 'head.html',
+			chunks: ['head'] // 与入口文件对应的模块名
 		})
 	]
 }
